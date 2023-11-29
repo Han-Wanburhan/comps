@@ -14,7 +14,18 @@ function App() {
     { label: "Blue", value: "blue" },
   ];
   return (
-    <Dropdown options={options} selection={selection} onSelect={handleSelect} />
+    <div className="flex">
+      <Dropdown
+        options={options}
+        selection={selection}
+        onSelect={handleSelect}
+      />
+      <Dropdown
+        options={options}
+        selection={selection}
+        onSelect={handleSelect}
+      />
+    </div>
   );
 }
 export default App;
